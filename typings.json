@@ -1,0 +1,11 @@
+{
+  "name": "insight-es-server",
+  "dependencies": {},
+  "globalDependencies": {
+    "bluebird": "registry:dt/bluebird#2.0.0+20160701023356",
+    "hapi": "registry:dt/hapi#13.0.0+20160709092105",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "lodash": "registry:dt/lodash#3.10.0+20160720001309",
+    "node": "registry:dt/node#6.0.0+20160709114037"
+  }
+}
