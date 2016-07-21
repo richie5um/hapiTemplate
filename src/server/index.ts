@@ -27,8 +27,7 @@ var registerPlugins = () => {
         console.log('Registering Plugins');
         var plugins = require('./plugins');
         return Promise.
-            each(plugins, (plugin) => {
-                console.log('Hello');
+            all(plugins.map((plugin) => {
                 server.register(plugin.module, plugin.options, (err) => {
                     if (err) {
                         return Promise.reject(err);
@@ -36,7 +35,7 @@ var registerPlugins = () => {
 
                     return Promise.resolve();
                 });
-            })
+            }))
             .then(() => {
                 return resolve();
             })
